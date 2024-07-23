@@ -1,0 +1,23 @@
+[package]
+name = "MomentumSafe"
+version = "0.0.0"
+upgrade_policy = "compatible"
+
+[addresses]
+msafe = "0xaa90e0d9d16b63ba4a289fb0dc8d1b454058b21c9b5c76864f825d5c1f32582e"
+# Test only addresses.
+# DO NOT EDIT, otherwise it will not pass the unit tests.
+owner0 = "0xdbb67f2caf126b224fa637451f37eb3a3181c074af576125da0f1ecb760382b3"
+owner1 = "0x717572a51e2140ca3472b973376f1ac064870d95c250b4477b9fe4bf8cbc2e3d"
+owner2 = "0x412090cb0f1c1b604040ce21e735336c4f26eb81b6c2e5bc351dbbcbe3428693"
+# msafe wallet address is already written in the transaction payload.
+# DO NOT EDIT, otherwise it will not pass the unit tests.
+msafe_wallet = "0xc0455c582b0e3d794918db7de1f1c218ac311701db218958718e74494703fd3b"
+msafe_wallet_import = "bd1438636eca5b057e45ac537692b5c3de53ed60556a026d3dc390cef321e561"
+# check in register payload
+test_msafe_module = "4cebef114d8ce88cc1e1df73b9a6effa51bf58105b18e2be2dc222c84a3e5485"
+# first valid nonce is not zero
+msafe_invalid = "a890f9fea5d4c9e54724f423efb89655329db2525268e690258deaa8557f5e3c"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet" }
